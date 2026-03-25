@@ -90,6 +90,7 @@ const Index: React.FC = () => {
     const url = canvasRef.current?.getDataUrl();
     if (!url) return;
     const id = saveToGallery(url, mode);
+    void id;
     setSaveToast('Saved ✓');
     setTimeout(() => setSaveToast(''), 2000);
     // optional vibration
