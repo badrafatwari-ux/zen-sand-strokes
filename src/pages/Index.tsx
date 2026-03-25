@@ -29,6 +29,7 @@ const Index: React.FC = () => {
   const [ambientActive,   setAmbientActive]   = useState(true);
   const [isResetting,     setIsResetting]     = useState(false);
   const [saveToast,       setSaveToast]       = useState('');
+  const [hasDrawn,        setHasDrawn]        = useState(false);
 
   // Timers
   const hideTimerRef  = useRef<ReturnType<typeof setTimeout>>();
