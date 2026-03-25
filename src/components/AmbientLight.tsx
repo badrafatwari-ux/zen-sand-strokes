@@ -36,7 +36,7 @@ const AmbientLight: React.FC<AmbientLightProps> = ({ active }) => {
   );
   const rafRef   = useRef<number>(0);
   const stateRef = useRef<Orb[]>(orbs.map(o => ({ ...o })));
-  const [tick, setTick] = useState(0);
+  const [, forceUpdate] = useState(0);
 
   useEffect(() => {
     if (!active) { cancelAnimationFrame(rafRef.current); return; }
