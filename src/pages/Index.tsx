@@ -101,6 +101,7 @@ const Index: React.FC = () => {
   const handleClear = useCallback(() => {
     canvasRef.current?.clearCanvas();
     firstDrawRef.current = false;
+    setHasDrawn(false);
     setIsResetting(false);
     clearTimeout(resetTimerRef.current);
   }, []);
