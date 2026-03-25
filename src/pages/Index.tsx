@@ -160,7 +160,7 @@ const Index: React.FC = () => {
       />
 
       {/* App title — fades on first draw */}
-      {!firstDrawRef.current && (
+      {!hasDrawn && (
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none text-center"
           style={{ opacity: 0.28 }}
