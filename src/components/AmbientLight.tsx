@@ -49,7 +49,7 @@ const AmbientLight: React.FC<AmbientLightProps> = ({ active }) => {
           x: orb.x + Math.cos(orb.angle) * 0.06,
           y: orb.y + Math.sin(orb.angle) * 0.04,
         }));
-        setTick(n => n + 1);
+        forceUpdate(n => n + 1);
         last = t;
       }
       rafRef.current = requestAnimationFrame(loop);
