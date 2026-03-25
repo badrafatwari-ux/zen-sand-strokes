@@ -34,7 +34,7 @@ const BreathingGuide: React.FC<BreathingGuideProps> = ({ active }) => {
       <div className="flex flex-col items-center gap-5">
         {/* Ring */}
         <div
-          className="rounded-full border-2 transition-all duration-[3000ms] ease-in-out"
+          className="rounded-full border-2 transition-all ease-in-out"
           style={{
             width: 100,
             height: 100,
