@@ -71,6 +71,7 @@ const Index: React.FC = () => {
   const onResetDone = useCallback(() => {
     setIsResetting(false);
     firstDrawRef.current = false;
+    setHasDrawn(false);
   }, []);
 
   // Start toolbar hide on mount
