@@ -64,6 +64,7 @@ const Index: React.FC = () => {
 
   const onFirstDraw = useCallback(() => {
     firstDrawRef.current = true;
+    setHasDrawn(true);
     resetCalmTimer();
   }, [resetCalmTimer]);
 
